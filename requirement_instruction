@@ -1,0 +1,8 @@
+pip install streamlit numpy scipy pandas pillow
+
+pip install "cloud-volume[gcs]"
+python -c "from cloudvolume import CloudVolume; print('OK')"
+
+
+pip install cupy-cuda12x cupyx
+optional
