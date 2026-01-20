@@ -656,7 +656,7 @@ def analyze_slice_smart(
     contact_area_px = int(mask_c.sum())
     perimeter_px = int(perimeter.sum())
 
-    ratio = float(contact_area_px) / float(perimeter_px) if perimeter_px > 0 else float("nan")
+    ratio = float(contact_area_px) / float(perimeter_px) if perimeter_px > 0 else 0.0
 
     return (
         int(neuron_id),
